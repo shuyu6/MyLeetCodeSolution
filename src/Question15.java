@@ -52,9 +52,11 @@ public class Question15 {
                     if (sum>0){
                         r--;
                     }else if (sum < 0){
+                        // left number is too small so move to right
                         l++;
                     }else{
                         result.add(Arrays.asList(nums[i], nums[l], nums[r]));
+                        // remove duplicated number
                         while (l<r && nums[l]==nums[l+1]) l++;
                         while (l<r && nums[r]==nums[r-1]) r--;
 
