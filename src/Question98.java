@@ -37,10 +37,15 @@ public class Question98 {
             return isValidBstInOrderMethod(root.right);
         }
     }
-    class TreeNode{
-        long val;
-        TreeNode left;
-        TreeNode right;
+    static class TreeNode{
+        public final long val;
+        public final TreeNode left;
+        public final TreeNode right;
 
+        public TreeNode(long val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
     }
 }
